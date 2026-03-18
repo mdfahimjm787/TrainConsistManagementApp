@@ -1,13 +1,33 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+import java.util.ArrayList;
+import java.util.List;
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+/**
+ * Train Consist Management App
+ * UC1: Initialize Train and Display Consist Summary
+ *
+ * This program demonstrates the starting point of the application.
+ * It initializes an empty train consist and displays its status.
+ *
+ * @author Fahim
+ * @version 1.0
+ */
+public class TrainConsistApp {
+
+    public static void main(String[] args) {
+
+        // Welcome Message
+        System.out.println("=====================================");
+        System.out.println("   Train Consist Management App");
+        System.out.println("=====================================");
+
+        // Initialize Train Consist using ArrayList
+        List<String> trainConsist = new ArrayList<>();
+
+        // Display initial bogie count
+        System.out.println("\nTrain consist initialized.");
+        System.out.println("Initial Bogie Count: " + trainConsist.size());
+
+        // Program continues
+        System.out.println("System ready for further operations.");
     }
 }
